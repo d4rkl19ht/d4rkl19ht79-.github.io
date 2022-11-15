@@ -11,11 +11,7 @@ function setHeader()
 	}
 };
 
-alert('hit')
-
-
 btnChangeUser.onclick = () => {
-	alert('btnChangeUser clicked!');
 	const name = prompt('Enter user name: ');
 	localStorage.setItem('name', name);
 	setHeader();
@@ -24,7 +20,6 @@ btnChangeUser.onclick = () => {
 setHeader();
 
 btnClearUser.onclick = () => {
-	alert('btnClearUser clicked!');
 	localStorage.clear();
 	setHeader();
 }
